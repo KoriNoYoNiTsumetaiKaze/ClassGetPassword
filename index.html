@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>Генерация пароля</title>
+  <script defer type="text/javascript" src="ajax.js"></script>
+ </head>
+ <body>
+  <form method="post">
+   <p>Введите длину пароля:<input id="LenPas"></p>
+   <p><input type="checkbox" checked id="FlagNumber">Использовать в пароле цифры</p>
+   <p><input type="checkbox" checked id="FlagBigLetter">Использовать в пароле буквы верхнего регистра</p>
+   <p><input type="checkbox" checked id="FlagSmallLetter">Использовать в пароле буквы нижнего регистра</p>
+   <p><input type="checkbox" checked id="FlagSpecialSymbol">Использовать в пароле спецсимволы</p>
+   <p><input type="button" value="Отправить" onclick='ajax()'></p>
+   <textarea id="Passwords" cols="60" rows="30"></textarea>
+  </form>
+ </body>
+</html>
